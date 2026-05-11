@@ -1,0 +1,118 @@
+/* ============================================================
+   EDUMY DESIGN SYSTEM — COLOUR TOKENS
+   Merged teal-forest × cyan-mint palette
+   Generated May 2026
+   ============================================================ */
+
+:root {
+
+  /* ----------------------------------------------------------
+     TEAL-CYAN SPINE — 9-stop primary ramp
+     Deep forest (dark end) → bright cyan-mint (light end)
+  ---------------------------------------------------------- */
+
+  --color-teal-950:  #050f0c;   /* Deepest dark surface            */
+  --color-teal-900:  #071f18;   /* Utility bar background          */
+  --color-teal-800:  #0a5c47;   /* Scrolled nav pill, drawer bg    */
+  --color-teal-700:  #0F6E56;   /* Hover state on dark surfaces    */
+  --color-teal-600:  #199068;   /* CTA button :hover               */
+  --color-teal-500:  #1D9E75;   /* ★ Brand primary — CTA, logo     */
+  --color-teal-400:  #2ABFAA;   /* Illustration highlights         */
+  --color-teal-300:  #5DCFC2;   /* Icon fills, blobs, tags         */
+  --color-teal-200:  #A8EDE6;   /* Hover fills, chip backgrounds   */
+  --color-teal-100:  #D4F7F3;   /* Section backgrounds             */
+  --color-teal-50:   #EDF9F8;   /* Page background wash            */
+
+
+  /* ----------------------------------------------------------
+     SEMANTIC BRAND ALIASES
+     Use these in components — never hardcode raw stops
+  ---------------------------------------------------------- */
+
+  --brand-primary:        var(--color-teal-500);   /* #1D9E75 */
+  --brand-primary-hover:  var(--color-teal-600);   /* #199068 */
+  --brand-primary-active: var(--color-teal-700);   /* #0F6E56 */
+
+  --surface-deep:         var(--color-teal-900);   /* #071f18 — utility bar    */
+  --surface-nav:          var(--color-teal-800);   /* #0a5c47 — scrolled pill  */
+  --surface-hover:        var(--color-teal-700);   /* #0F6E56 — dark hover     */
+
+  --accent-mid:           var(--color-teal-400);   /* #2ABFAA — illustrations  */
+  --accent-light:         var(--color-teal-300);   /* #5DCFC2 — icons, tags    */
+
+  --tint-strong:          var(--color-teal-200);   /* #A8EDE6 — chip bg        */
+  --tint-soft:            var(--color-teal-100);   /* #D4F7F3 — section bg     */
+  --tint-wash:            var(--color-teal-50);    /* #EDF9F8 — page wash      */
+
+
+  /* ----------------------------------------------------------
+     TEXT
+  ---------------------------------------------------------- */
+
+  --text-heading:         #1E2D2B;   /* Deep teal-tinted near-black  */
+  --text-body:            #2E4540;   /* Slightly lighter for body    */
+  --text-muted:           #5a7a74;   /* Secondary / captions         */
+  --text-placeholder:     #8aaba6;   /* Input placeholders           */
+  --text-on-dark:         #ffffff;   /* Text on dark teal surfaces   */
+  --text-on-dark-muted:   rgba(255, 255, 255, 0.65);
+  --text-on-dark-faint:   rgba(255, 255, 255, 0.40);
+  --text-brand:           var(--color-teal-500);   /* Inline brand colour text */
+
+
+  /* ----------------------------------------------------------
+     WHITE ALPHA SCALE — use on dark teal surfaces
+  ---------------------------------------------------------- */
+
+  --white-06:   rgba(255, 255, 255, 0.06);   /* Resting nav background   */
+  --white-10:   rgba(255, 255, 255, 0.10);   /* Link hover background    */
+  --white-15:   rgba(255, 255, 255, 0.15);   /* Active link background   */
+  --white-20:   rgba(255, 255, 255, 0.20);   /* Drawer dividers          */
+  --white-25:   rgba(255, 255, 255, 0.25);   /* Ghost button border      */
+  --white-40:   rgba(255, 255, 255, 0.40);   /* Utility bar faint text   */
+  --white-45:   rgba(255, 255, 255, 0.45);   /* "my" wordmark mute       */
+  --white-65:   rgba(255, 255, 255, 0.65);   /* Nav link text            */
+  --white-80:   rgba(255, 255, 255, 0.80);   /* Sign in button text      */
+
+
+  /* ----------------------------------------------------------
+     TEAL ALPHA SCALE — use on light / white surfaces
+  ---------------------------------------------------------- */
+
+  --teal-08:    rgba(29, 158, 117, 0.08);    /* Card hover tint          */
+  --teal-15:    rgba(29, 158, 117, 0.15);    /* Active chip background   */
+  --teal-20:    rgba(29, 158, 117, 0.20);    /* Badge fill (students)    */
+  --cyan-20:    rgba(42, 191, 170, 0.20);    /* Badge fill (certified)   */
+  --cyan-25:    rgba(93, 207, 194, 0.25);    /* Decorative section blobs */
+
+
+  /* ----------------------------------------------------------
+     BORDERS
+  ---------------------------------------------------------- */
+
+  --border-default:       rgba(29, 158, 117, 0.15);   /* Subtle card border       */
+  --border-medium:        rgba(29, 158, 117, 0.25);   /* Emphasis border          */
+  --border-strong:        rgba(29, 158, 117, 0.40);   /* Active / focused border  */
+  --border-on-dark:       rgba(255, 255, 255, 0.12);  /* Border on dark surfaces  */
+  --border-on-dark-faint: rgba(255, 255, 255, 0.08);  /* Dividers on dark surface */
+
+
+  /* ----------------------------------------------------------
+     SIGNAL / STATUS — single-use semantic colours
+  ---------------------------------------------------------- */
+
+  --signal-amber:         #EF9F27;              /* Warnings, uptime badge   */
+  --signal-amber-bg:      rgba(239, 159, 39, 0.15);
+  --signal-amber-text:    #854F0B;
+
+  --signal-error:         #E24B4A;
+  --signal-error-bg:      rgba(226, 75, 74, 0.10);
+  --signal-error-text:    #A32D2D;
+
+  --signal-success:       var(--color-teal-500);
+  --signal-success-bg:    var(--teal-15);
+  --signal-success-text:  var(--color-teal-800);
+
+  --signal-info:          #378ADD;
+  --signal-info-bg:       rgba(55, 138, 221, 0.10);
+  --signal-info-text:     #185FA5;
+
